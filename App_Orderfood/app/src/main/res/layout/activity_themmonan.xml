@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Themmonan"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#0B6159">
+    <LinearLayout
+        android:background="#09302C"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imbThoatthemmonan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+    </LinearLayout>
+    <TextView
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM MÓN ĂN"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edtTenmonan"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên món ăn" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/edtGiatien"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Giá tiền" />
+    <ImageView
+        android:id="@+id/imvHinhanhmonan"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/thuc_don"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDongy"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý"
+            android:backgroundTint="#03A9F4"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textColor="#ffffff"
+            android:backgroundTint="@android:color/holo_red_dark"  />
+
+    </LinearLayout>
+</LinearLayout>

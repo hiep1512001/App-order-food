@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Gọi món"
+        android:id="@+id/mnGoimon"
+app:showAsAction="always"
+        android:icon="@drawable/thuc_don"/>
+    <item android:title="Thanh toán"
+        android:id="@+id/mnThanhtoan"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_thanhtoan"/>
+</menu>
